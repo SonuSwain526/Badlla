@@ -1,0 +1,144 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+
+    height: 4000px;
+    /* width: 100%; */
+}
+
+#navbar {
+    display: flex;
+    border-radius: 18px;
+    align-items: center;
+    height: 60px;
+    position: relative;
+    width: 100%;
+}
+
+#navbar .logo img {
+    height: 59px;
+    width: 168px;
+    border-radius: 18px;
+
+}
+
+ul {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+}
+
+ul a {
+    border-radius: 20px;
+    display: block;
+    padding: 26px;
+
+}
+
+#navbar::before {
+    content: "";
+    position: absolute;
+    background-color: gray;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+#navbar .navitem .item a:hover {
+    color: rgb(67, 67, 65);
+    background-color: rgba(229, 224, 224, 0.538);
+}
+
+.item {
+    display: block;
+    padding: 10px;
+}
+
+.login {
+    font-size: 15px;
+    border-radius: 18px;
+    display: block;
+    padding: 7px;
+    position: absolute;
+    right: 100px;
+    box-shadow: 8px 8px 10px;
+    background-color: transparent;
+}
+
+.login:hover {
+    color: white;
+    background-color: rgba(160, 129, 129, 0.652);
+}
+
+.home {
+    display: flex; 
+    flex-direction: row;
+    font-size: 100px;
+    justify-content: center;
+    padding: 90px 350px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.content {
+    display: flex;
+    position: relative;
+    top: -50px;
+    width: 100%;
+    height: 400px;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 15px;
+    color: blue;
+    box-shadow: 5px 5px 5px;
+    
+}
+.content h2{
+    text-decoration: underline;
+    
+}
+.content::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('../content.jpg') no-repeat center center/cover;
+    opacity: 0.8;
+
+    z-index: -1;
+}
+
+.products h1{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+
+}
+.ciz-item{
+height: 329px;
+margin: 50px 50px;
+width: 270px;
+cursor: pointer;
+text-decoration: underline;
+/* background: url('../sample1.png') no-repeat center center/cover; */
+background-size: 248px;
+box-shadow: 10px 10px 30px;
+border-radius: 20px;
+}
+.item{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    justify-content: center;
+    margin: 15px 20px;
+}
+.item{
+    position: relative;
+    left: -28px;
+}
